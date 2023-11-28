@@ -5,7 +5,7 @@ use std::env;
 fn main() {
     let args: Vec<String> = env::args().collect();
     let args_as_str: Vec<&str> = args.iter().map(|s| s.as_ref()).collect();    
-    let mut addr:  &str = "1";
+    let addr: &str;
     if args_as_str.len() > 1
     {
         addr = args_as_str[1];
