@@ -25,5 +25,4 @@ jobs:
       with:
         repo_token: ${{ secrets.GITHUB_TOKEN }}
         file: ./dist/release/tcp-test
-        file_glob: true
         tag: v1.0.0
